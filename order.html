@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        
+        .order-container {
+            padding-top: 120px; 
+            padding-bottom: 50px;
+            background: #fff8f0 url('../images/background.jpg') no-repeat center center;
+            background-size: cover;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+
+        .order-form {
+            width: 90%;
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 10px;
+            box-sizing: border-box;
+        }
+
+        .order-form h2 {
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 1.8rem;
+        }
+
+        .order-form label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        .order-form input, 
+        .order-form select, 
+        .order-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 0.95rem;
+        }
+
+        .order-form textarea {
+            resize: vertical;
+        }
+
+        .order-form button {
+            width: 100%;
+            padding: 12px;
+            background-color: #f39c12;
+            color: white;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .order-form button:hover {
+            background-color: #d35400;
+        }
+
+        @media (max-width: 600px) {
+            .order-form {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+
+<nav class="navbar">
+    <a href ="index.html" class="logo">
+                <img src="../images/breadlogo.png" alt = "breadlogo" width = 44 height = 44>
+                <h1>ez's bakery</h1>
+            </a>
+    <ul class="navigation-links">
+        <li><a href="index.html">home</a></li>
+        <li><a href="catering.html">catering</a></li>
+        <li><a href="menu.html">menu</a></li>
+        <li><a href="about.html">about us</a></li>
+        <li><a href="contact.html">contact us</a></li>
+        <li><a href="bakeries.html">bakeries</a></li>
+        <li><a href="order.html" class="order-btn active">ORDER NOW</a></li>
+    </ul>
+</nav>
+
+
+<section class="order-container">
+    <form class="order-form" action="#" method="GET">
+        <h2>Place Your Detailed Order</h2>
+
+     
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        
+        <label for="item">Select Item</label>
+        <select id="item" name="item" required>
+            <option value="">--Choose an item--</option>
+            <option value="croissant">Butter Croissant</option>
+            <option value="macaron">French Macaron</option>
+            <option value="meringue">French Meringue</option>
+            <option value="eclair">Eclair</option>
+            <option value="strawberry-shortcake">Strawberry Shortcake</option>
+            <option value="cinnamon-rolls">Cinnamon Rolls</option>
+            <option value="strawberry-crepe">Crepes</option>
+            <option value="cake">Cakes</option>
+        </select>
+
+        <label for="quantity">Quantity</label>
+        <input type="number" id="quantity" name="quantity" min="1" required>
+
+        <label for="pickup">Pickup or Delivery</label>
+        <select id="pickup" name="pickup" required>
+            <option value="">--Choose an option--</option>
+            <option value="pickup">Pickup</option>
+            <option value="delivery">Delivery</option>
+        </select>
+
+        
+        <label for="flavors">Preferred Flavors (optional)</label>
+        <input type="text" id="flavors" name="flavors" placeholder="E.g., chocolate, vanilla, almond">
+
+        <label>Allergies or Dietary Restrictions</label>
+        <input type="text" name="allergies" placeholder="E.g., nuts, gluten, dairy">
+
+        <label for="special">Special Instructions</label>
+        <textarea id="special" name="special" rows="4" placeholder="E.g., birthday message, frosting style"></textarea>
+
+        <label>Additional Items (check all that apply)</label>
+        <input type="checkbox" id="gift-wrap" name="extras" value="gift-wrap">
+        <label for="gift-wrap">Gift Wrap</label>
+        <input type="checkbox" id="card" name="extras" value="card">
+        <label for="card">Greeting Card</label>
+        <input type="checkbox" id="utensils" name="extras" value="utensils">
+        <label for="utensils">Serving Utensils</label>
+
+        <label for="newsletter">Subscribe to Our Newsletter?</label>
+        <select id="newsletter" name="newsletter">
+            <option value="yes">Yes, please!</option>
+            <option value="no">No, thanks</option>
+        </select>
+
+        <button type="submit">Submit Order</button>
+    </form>
+</section>
+
+</body>
+</html>

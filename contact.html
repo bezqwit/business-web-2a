@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        .contact-section {
+            margin-top: 100px;
+            padding: 40px 10%;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            justify-content: center;
+        }
+
+        .contact-info, .contact-form {
+            background-color: #F9E0B79E;
+            padding: 30px;
+            border-radius: 20px;
+            width: 400px;
+        }
+
+        
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            
+        }
+
+        .contact-form button {
+            background-color: #F1B758;
+            border: none;
+            padding: 12px;
+            width: 100%;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+
+        .contact-form button:hover {
+            background-color: #d99d3f;
+        }
+    </style>
+</head>
+
+<body>
+
+<nav class="navbar">
+    <a href ="index.html" class="logo">
+                <img src="../images/breadlogo.png" alt = "breadlogo" width = 44 height = 44>
+                <h1>ez's bakery</h1>
+            </a>
+    <ul class="navigation-links">
+        <li><a href="index.html">home</a></li>
+        <li><a href="catering.html">catering</a></li>
+        <li><a href="menu.html">menu</a></li>
+        <li><a href="about.html">about us</a></li>
+        <li><a href="contact.html">contact us</a></li>
+        <li><a href="bakeries.html">bakeries</a></li>
+        
+        <li><a href="order.html" class="order-btn">ORDER NOW</a></li>
+    </ul>
+</nav>
+
+<section class="contact-section">
+
+    <div class="contact-info">
+        <h2>Visit or Contact Us</h2>
+        <h3>Main Location:</h3>
+        <p> 123 Golden Crust Ave</p>
+        Boston, MA 02118</p>
+
+        <h4>Phone:</h4> <p>(617) 555-4821</p>
+        <p><strong>Email:</strong> hello@bezsbakery.com</p>
+
+        <h4>Business Hours</h4>
+        <ul>
+            <li>Monday – Friday: 7:00 AM – 6:00 PM</li>
+            <li>Saturday: 8:00 AM – 5:00 PM</li>
+            <li>Sunday: 8:00 AM – 3:00 PM</li>
+        </ul>
+    </div>
+
+    <div class="contact-form">
+        <h3>Send Us a Message</h3>
+        <form action="#" method="GET">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+</section>
+
+<footer class="footer">
+    <p>© 2026 Bez's Bakery</p>
+</footer>
+
+</body>
+</html>

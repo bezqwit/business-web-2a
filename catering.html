@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+       
+        .catering-container {
+            padding-top: 120px; 
+            padding-bottom: 50px;
+            background: #fff8f0 url('../images/background.jpg');
+            background-size: cover;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+
+        .catering-form {
+            width: 90%;
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #FFFFFFE6;
+            padding: 30px;
+            border-radius: 10px;
+            box-sizing: border-box;
+        }
+
+        .catering-form h2 {
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 1.8rem;
+        }
+
+        .catering-form label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        .catering-form input, 
+        .catering-form select, 
+        .catering-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 0.95rem;
+        }
+
+        .catering-form textarea {
+            resize: vertical;
+        }
+
+        .catering-form button {
+            width: 100%;
+            padding: 12px;
+            background-color: #f39c12;
+            color: white;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            
+            transition: 0.3s;
+        }
+
+        .catering-form button:hover {
+            background-color: #d35400;
+        }
+
+        @media (max-width: 600px) {
+            .catering-form {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+
+<nav class="navbar">
+    <a href ="index.html" class="logo">
+                <img src="../images/breadlogo.png" alt = "breadlogo" width = 44 height = 44>
+                <h1>ez's bakery</h1>
+            </a>
+    <ul class="navigation-links">
+        <li><a href="index.html">home</a></li>
+        <li><a href="catering.html" class="active">catering</a></li>
+        <li><a href="menu.html">menu</a></li>
+        <li><a href="about.html">about us</a></li>
+        <li><a href="contact.html">contact us</a></li>
+        <li><a href="bakeries.html">bakeries</a></li>
+        <li><a href="order.html" class="order-btn">ORDER NOW</a></li>
+    </ul>
+</nav>
+
+
+<section class="catering-container">
+    <form class="catering-form" action="#" method="GET">
+        <h2>Catering Reservation Form</h2>
+
+       
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        
+        <label for="event-type">Event Type</label>
+        <select id="event-type" name="event-type" required>
+            <option value="">--Select Event Type--</option>
+            <option value="wedding">Wedding</option>
+            <option value="birthday">Birthday Party</option>
+            <option value="corporate">Corporate Event</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label for="guests">Number of Guests</label>
+        <input type="number" id="guests" name="guests" min="1" required>
+
+        <label for="date">Event Date</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="time">Event Time</label>
+        <input type="time" id="time" name="time" required>
+
+        
+        <label for="menu-type">Menu Preference</label>
+        <select id="menu-type" name="menu-type">
+            <option value="">--Select Menu Type--</option>
+            <option value="pastries">Pastries Only</option>
+            <option value="full-meal">Full Meal</option>
+            <option value="custom">Custom</option>
+        </select>
+
+        <label for="dishes">Preferred Dishes / Notes</label>
+        <textarea id="dishes" name="dishes" rows="4" placeholder="List any dishes you want, flavors, or special requests"></textarea>
+
+        <label for="allergies">Allergies or Dietary Restrictions</label>
+        <input type="text" id="allergies" name="allergies" placeholder="E.g., gluten-free, nuts, dairy">
+
+        <label>Additional Services (check all that apply)</label>
+        
+        <label for="setup">Event Setup</label>
+        <input type="checkbox" id="delivery" name="extras" value="delivery">
+        <label for="delivery">Delivery Service</label>
+        <input type="checkbox" id="utensils" name="extras" value="utensils">
+        
+        
+        <label for="staff">On-Site Staff</label>
+        <input type="checkbox" id="staff" name="extras" value="staff">
+
+
+        <button type="submit">Submit Reservation</button>
+    </form>
+</section>
+
+</body>
+</html>

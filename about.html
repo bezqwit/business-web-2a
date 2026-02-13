@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+
+        .hero {
+            background: url('../images/bakery.jpg') ;
+            background-size: cover;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-shadow: 1px 1px 5px #000000B3;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            outline: 13px;
+        }
+
+
+        .about-container {
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        .about-section {
+            margin-bottom: 40px;
+        }
+
+        .about-section h2 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+
+        .about-section p {
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        .team {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .team-member {
+            flex: 1 1 250px;
+            text-align: center;
+        }
+
+        .team-member img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f39c12;
+            color: white;
+        }
+
+        @media (max-width: 600px) {
+            .team {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+
+<nav class="navbar">
+    <a href ="index.html" class="logo">
+                <img src="../images/breadlogo.png" alt = "breadlogo" width = 44 height = 44>
+                <h1>ez's bakery</h1>
+            </a>
+    <ul class="navigation-links">
+        <li><a href="index.html">home</a></li>
+        <li><a href="catering.html">catering</a></li>
+        <li><a href="menu.html">menu</a></li>
+        <li><a href="about.html" class="active">about us</a></li>
+        <li><a href="contact.html">contact us</a></li>
+        <li><a href="bakeries.html">bakeries</a></li>
+        <li><a href="order.html" class="order-btn">ORDER NOW</a></li>
+    </ul>
+</nav>
+
+<section class="hero">
+    <h1>About Bez's Bakery</h1>
+</section>
+
+
+<div class="about-container">
+
+
+    <section class="about-section">
+        <h2>Our Story</h2>
+        <p>
+            Bez’s Bakery began in 2022 as a small family kitchen with one oven, 
+            a handful of handwritten recipes, and a dream to share something special 
+            with our community. What started as early mornings baking bread for neighbors 
+            quickly turned into long lines out the door and a growing family of loyal customers.
+            Today, we’re proud to have expanded to multiple locations, but our heart 
+            remains the same. Every loaf, pastry, and cake is still made with the same 
+            care, tradition, and love that started it all. We believe great baking brings 
+            people together — whether it’s over morning coffee, birthday celebrations, 
+            or simply the comfort of something warm and fresh.
+        </p>
+    </section>
+
+    
+    <section class="about-section">
+        <h2>Our Mission</h2>
+        <p>
+            At Bez's Bakery, our mission is to craft pastries and baked goods using the highest quality ingredients,
+            while supporting our community and creating memorable experiences for every customer.
+        </p>
+    </section>
+
+
+    <section class="about-section">
+        <h2>Meet the Bakers</h2>
+        <div class="team">
+            
+            <div class="team-member">
+                <img src="../images/baker2.jpg" alt="Baker 2">
+                <h4>Alice</h4>
+                <p>Cake Decorator</p>
+            </div>
+            <div class="team-member">
+                <img src="../images/baker3.jpg" alt="Baker 3">
+                <h4>John</h4>
+                <p>Pastry Specialist</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="about-section">
+        <h2>Our Achievements</h2>
+        <table>
+            <tr>
+                <th>Year</th>
+                <th>Achievement</th>
+            </tr>
+            <tr>
+                <td>2022</td>
+                <td>Voted Best Local Bakery by City Magazine</td>
+            </tr>
+            <tr>
+                <td>2024</td>
+                <td>Opened Second Location</td>
+            </tr>
+            <tr>
+                <td>2025</td>
+                <td>Featured on National Food Network</td>
+            </tr>
+        </table>
+    </section>
+
+</div>
+
+<footer class="footer">
+    <p>© 2026 Bez's Bakery</p>
+</footer>
+
+</body>
+</html>

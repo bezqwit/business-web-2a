@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        .locations-hero {
+            margin-top: 70px;
+            background: url('../images/locations-bg.jpg') no-repeat center center;
+            background-size: cover;
+            height: 250px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+        }
+
+        .locations-hero h1 {
+            font-size: 2.5rem;
+        }
+
+        .locations-container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .location-card {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 15px 20px;
+            margin-bottom: 20px;
+            background-color: #fff;
+        }
+
+        .location-card h3 {
+            margin: 0 0 8px 0;
+            font-size: 1.4rem;
+            color: #333;
+        }
+
+        .location-card p {
+            margin: 4px 0;
+        }
+
+        .location-card a {
+            color: #f39c12;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .location-card a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+
+<nav class="navbar">
+    <a href ="index.html" class="logo">
+                <img src="../images/breadlogo.png" alt = "breadlogo" width = 44 height = 44>
+                <h1>ez's bakery</h1>
+            </a>
+    <ul class="navigation-links">
+        <li><a href="index.html">home</a></li>
+        <li><a href="catering.html">catering</a></li>
+        <li><a href="menu.html">menu</a></li>
+        <li><a href="about.html">about us</a></li>
+        <li><a href="contact.html">contact us</a></li>
+        <li><a href="bakeries.html" class="active">bakeries</a></li>
+        <li><a href="order.html" class="order-btn">ORDER NOW</a></li>
+    </ul>
+</nav>
+
+
+<section class="locations-hero">
+    <h1>Our Bakery Locations</h1>
+</section>
+
+
+<div class="locations-container">
+
+    <div class="location-card">
+        <h3>Bez’s Bakery — Downtown</h3>
+        <p>123 Main Street, Medford, MA 02155</p>
+        <p>Phone: (555) 123‑4567</p>
+        <p>Hours: Mon–Fri: 7am–7pm | Sat–Sun: 8am–6pm</p>
+        <a href="https://maps.google.com?q=123+Main+St+Medford+MA">Get Directions</a>
+    </div>
+
+    <div class="location-card">
+        <h3>Bez’s Bakery — Riverside</h3>
+        <p>78 Riverside Avenue, Medford, MA 02155</p>
+        <p>Phone: (555) 987‑6543</p>
+        <p>Hours: Mon–Fri: 7am–7pm | Sat–Sun: 8am–6pm</p>
+        <a href="https://maps.google.com?q=78+Riverside+Ave+Medford+MA">Get Directions</a>
+    </div>
+
+    <div class="location-card">
+        <h3>Bez’s Bakery — Uptown</h3>
+        <p>456 Uptown Place, Medford, MA 02155</p>
+        <p>Phone: (555) 222‑3344</p>
+        <p>Hours: Mon–Fri: 7am–7pm | Sat–Sun: 8am–6pm</p>
+        <a href="https://maps.google.com?q=456+Uptown+Pl+Medford+MA">Get Directions</a>
+    </div>
+
+    <div class="location-card">
+        <h3>Bez’s Bakery — West End</h3>
+        <p>34 West End Road, Medford, MA 02155</p>
+        <p>Phone: (555) 444‑7788</p>
+        <p>Hours: Mon–Fri: 7am–7pm | Sat–Sun: 8am–6pm</p>
+        <a href="https://maps.google.com?q=34+West+End+Rd+Medford+MA">Get Directions</a>
+    </div>
+
+</div>
+
+<footer class="footer">
+    <p>© 2026 Bez's Bakery</p>
+</footer>
+
+</body>
+</html>
